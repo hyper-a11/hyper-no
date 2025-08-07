@@ -1,6 +1,6 @@
-from hyper_no.scanner import scan_number
-from hyper_no.exporter import export_to_json, export_to_csv, export_to_txt
-from hyper_no.logger import log_result
+from hyper_no1.scanner import scan_number
+from hyper_no1.exporter import export_to_json, export_to_csv, export_to_txt
+from hyper_no1.logger import log_result
 
 if __name__ == "__main__":
     number = input("\033[92m[🔍] Enter phone number (e.g. +911234567890): \033[0m")
