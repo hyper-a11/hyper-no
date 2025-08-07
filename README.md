@@ -57,3 +57,12 @@ python main.py
   1. Truecaller profile of Ravi Kumar
   2. Leaked database reference on Pastebin
   3. Facebook result for this number
+
+_ _ _ 
+
+
+
+RUN CODE
+
+' python main.py '
+
