@@ -5,7 +5,7 @@ def scan_number(phone_number):
     try:
         parsed_number = phonenumbers.parse(phone_number, None)
         if not phonenumbers.is_valid_number(parsed_number):
-            return {"valid": False}
+            return {"valid": False, "error": "Invalid phone number format."}
 
         region = geocoder.description_for_number(parsed_number, "en")
         provider = carrier.name_for_number(parsed_number, "en")
@@ -22,7 +22,7 @@ def scan_number(phone_number):
             "whatsapp_link": f"https://wa.me/{parsed_number.national_number}",
             "telegram_link": f"https://t.me/+{parsed_number.national_number}",
             "facebook_link": f"https://facebook.com/search/top/?q={parsed_number.national_number}",
-            "name_guess": "Ravi Kumar",
+            "name_guess": "Ravi Kumar",  # static guess for now
             "google_results": [
                 "Truecaller profile of Ravi Kumar",
                 "Leaked database reference on Pastebin",
@@ -31,6 +31,7 @@ def scan_number(phone_number):
             "breach_found": breach_check(str(parsed_number.national_number))
         }
         return result
+
     except Exception as e:
         return {"valid": False, "error": str(e)}
 
