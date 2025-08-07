@@ -34,10 +34,10 @@
 pkg update && pkg upgrade
 pkg install python git
 pip install phonenumbers
-git clone https://github.com/hyper-a11/hyper-no1.git
-cd hyper-no1
+git clone https://github.com/hyper-a11/hyper_no1.git
+cd hyper_no1
 pip install -r requirements.txt
-python main.py
+python3 main.py
 
 ---
 
