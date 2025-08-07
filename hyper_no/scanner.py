@@ -22,7 +22,7 @@ def scan_number(phone_number):
             "whatsapp_link": f"https://wa.me/{parsed_number.national_number}",
             "telegram_link": f"https://t.me/+{parsed_number.national_number}",
             "facebook_link": f"https://facebook.com/search/top/?q={parsed_number.national_number}",
-            "name_guess": "Ravi Kumar",  # static guess for now
+            "name_guess": "Ravi Kumar",  # Placeholder name
             "google_results": [
                 "Truecaller profile of Ravi Kumar",
                 "Leaked database reference on Pastebin",
